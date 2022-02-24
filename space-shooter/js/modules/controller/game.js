@@ -27,8 +27,8 @@ class Game {
         this.background = [];
         this.height = innerHeight;
         this.state = state;
-        this.bgm = new Audio('/audio/tngend2.mp3');
-        this.redAlert = new Audio('/audio/redalert.mp3');
+        this.bgm = new Audio('./audio/tngend2.mp3');
+        this.redAlert = new Audio('./audio/redalert.mp3');
         this.width = 1024;
         this.height = 576;
     }

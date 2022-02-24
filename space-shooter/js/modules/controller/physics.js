@@ -56,7 +56,7 @@ class Physics {
 
     explosion(object, color) {
         // Play explosion audio
-        const explosionAudio = new Audio('/audio/explosion.mp3');
+        const explosionAudio = new Audio('./audio/explosion.mp3');
         explosionAudio.play();
 
 

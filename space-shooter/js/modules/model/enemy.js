@@ -61,7 +61,7 @@ export default class Enemy {
 
         if(projectileCount.length < 3){
             // Play projectile sound
-            const projectile = new Audio('/audio/klingon_torpedo.mp3');
+            const projectile = new Audio('./audio/klingon_torpedo.mp3');
             projectile.play();
 
             // Create new projectile and add to list
