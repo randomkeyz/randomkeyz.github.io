@@ -1,0 +1,70 @@
+@font-face {
+    font-family: 'EdgeOfTheGalaxy';
+    src:    url('fonts/EdgeOfTheGalaxyRegular.woff2') format('woff2'),
+            url('fonts/EdgeOfTheGalaxyRegular.woff') format('woff'),
+            url('fonts/EdgeOfTheGalaxyRegular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'EdgeOfTheGalaxy';
+    src:    url('fonts/EdgeOfTheGalaxyItalic.woff2') format('woff2'),
+            url('fonts/EdgeOfTheGalaxyItalic.woff') format('woff'),
+            url('fonts/EdgeOfTheGalaxyItalic.ttf') format('truetype');
+    font-style: italic;
+    font-weight: normal;
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    overflow: hidden;
+    background: #000;
+    color: #fff;
+    font: normal 16px Helvetica, sans-serif;
+}
+#main{
+    text-align: center;
+    width: 100%;
+}
+#main h1{
+    font: italic 5em 'EdgeOfTheGalaxy', sans-serif ;
+}
+#main h2{
+    margin: 1em 0 0.5em;
+}
+
+#game{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#score{
+    font: normal 2em 'EdgeOfTheGalaxy', sans-serif;
+    color: #FFE000;
+}
+button{
+    background: #FFE000;
+    border-radius: 1.3em;
+    border: none;
+    width: 9em;
+    height: 2.4em;
+    font: normal 1.8em 'Antonio', Helvetica, sans-serif;
+    margin: 1.5em 0 0.4em;
+    cursor: pointer;
+}
+.innerWrap{
+    display: none;
+}
+canvas{
+    border: 2px solid #FFE000;
+}
+.gameOverMenu{
+    display: none;
+}

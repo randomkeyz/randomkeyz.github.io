@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Star Trek themed space shooter game</title>
+        <meta name="description" content="Star Trek themed space shooter game">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Antonio&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles/main.css">
+    </head>
+    <body>
+        <section id="game">
+            <div class="innerWrap">
+                <div id="score">Score: 0</div><br/>
+                <canvas></canvas>
+            </div>
+            <div id="main">
+                <div class="startingMenu">
+                    <h1>SPACE SHOOTER</h1>
+                    <p>Your shuttle has boldy gone into enemy territory. Send as many enemies as you can to Sto'Vo'Kor to survive!</p>
+                    <h2>Instructions:</h2>
+                    <ul>
+                        <li>Up, Down, Left, and Right arrow keys to steer</li>
+                        <li>Spacebar to shoot </li>
+                        <li>(3 shots before cooldown cycle, 2 shots to destroy an enemy)</li>
+                    </ul>
+                    <button id="startGame">START</button>
+                    <p>(Please adjust your volume. This game uses sound.)</p>
+                </div>
+                <div class="gameOverMenu">
+                    <h1>GAME OVER</h1>
+                    <h3>Final Score: <span id="finalScore"></span></h3>
+                    <button id="replayGame">REPLAY</button>
+                </div>
+            </div>
+        </section>
+        
+        <script type="module" src="js/main.js"></script>
+    </body>
+</html>
